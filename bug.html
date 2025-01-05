@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Incorrect way to access element by ID using innerHTML
+    document.getElementById("myDiv").innerHTML = "This will not replace correctly";
+    
+    //Correct way to access element by ID using innerHTML
+    // document.getElementById("myDiv").innerHTML = "This will replace correctly";
+  </script>
+</body>
+</html>
